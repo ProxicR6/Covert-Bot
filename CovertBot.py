@@ -11,7 +11,7 @@ bot = commands.Bot(command_prefix="!")
 @bot.event
 async def on_ready():
     print("Ready")
-    await bot.change_presence(game=discord.Game(name="Covert eSports", type=3))
+    await bot.change_presence(game=discord.Game(name="Watching Nebula eSports", type=3))
     for server in bot.servers:
         for channel in server.channels:
             if "rules" in channel.name:
